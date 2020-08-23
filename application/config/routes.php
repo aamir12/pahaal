@@ -115,7 +115,7 @@ $route['blog'] = 'Site/Blog';
 $route['blog_detail/(:num)'] = 'Site/Blog/Blog_detail/$1';
 
 $route['shop'] = 'Site/Product';
-$route['shop_detail/(:num)'] = 'Site/Product/Shop_detail';
+$route['shop_detail/(:num)'] = 'Site/Product/Shop_detail/$1';
 
 /*Site*/
 

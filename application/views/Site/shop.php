@@ -225,22 +225,9 @@
                         <div class="offer-slider slide-1 ">
                            <div>
                               <div class="media">
-                                 <a href="/collections/new-grocery/products/the-grocery1" >
-                                 <img class="lazyload  img-fluid" src="//cdn.shopify.com/s/files/1/0358/5507/3324/products/image_1.png?v=1585050994" alt="Curcuma Haldi" >
-                                 </a>
-                                 <div class="media-body align-self-center">
-                                    <div class="rating">
-                                       <span class="shopify-product-reviews-badge" data-id="4760121540652"></span>
-                                    </div>
-                                    <a href="/collections/new-grocery/products/the-grocery1">
-                                       <h6 itemprop="name" >
-                                          Curcuma Haldi
-                                       </h6>
-                                    </a>
-                                    <h4><span class="money">$22.00</span></h4>
-                                 </div>
+                                 No Product Found
                               </div>
-                              <div class="media">
+                              <!-- <div class="media">
                                  <a href="/collections/new-grocery/products/tong-garden-pistachios" >
                                  <img class="lazyload  img-fluid" src="//cdn.shopify.com/s/files/1/0358/5507/3324/products/image_8_12b96b17-0003-424d-8425-cd79ef27fb1e.png?v=1585052951" alt="Tong Pistachios" >
                                  </a>
@@ -271,9 +258,9 @@
                                     </a>
                                     <h4><span class="money">$48.00</span></h4>
                                  </div>
-                              </div>
+                              </div> -->
                            </div>
-                           <div>
+                           <!-- <div>
                               <div class="media">
                                  <a href="/collections/new-grocery/products/usable-dhaniya-powder" >
                                  <img class="lazyload  img-fluid" src="//cdn.shopify.com/s/files/1/0358/5507/3324/products/image_24_6657b003-f4eb-4e7a-b2d3-d7cc8f33ed3e.png?v=1585052357" alt="Usable Powder" >
@@ -322,7 +309,7 @@
                                     <h4><span class="money">$35.00</span></h4>
                                  </div>
                               </div>
-                           </div>
+                           </div> -->
                         </div>
                      </div>
                     

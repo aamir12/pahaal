@@ -124,6 +124,58 @@ class Product_model extends CI_Model {
 		return $data;
 	}
 
-	
+	public function getProductDetailOptions($product_id){
+	    $options = array();
+	    $productoptions = $this->getProductOptions($product_id);
+	    foreach ($productoptions as $option) {
+			$product_option_value_data = array();
+			foreach ($option['product_option_value'] as $option_value) {
+				if(($option_value['quantity'] > 0)) {
+					if ((float)$option_value['price']) {
+						$price = $option_value['price'];
+					} else {
+						$price = false;
+					}
+
+					$product_option_value_data[] = array(
+						'product_option_value_id' => $option_value['product_option_value_id'],
+						'option_value_id'         => $option_value['option_value_id'],
+						'name'                    => $option_value['name'],                            
+						'price'                   => $price
+						
+					);
+				}
+			}
+
+			$options[] = array(
+				'product_option_id'    => $option['product_option_id'],
+				'product_option_value' => $product_option_value_data,
+				'option_id'            => $option['option_id'],
+				'name'                 => $option['name'],
+				'type'                 => $option['type']
+			);
+		}
+		return $options;
+	}  
+
+	public function getRelatedProduct($pid,$category=0,$subcategory=0,$limit=10){
+		if($category!=0){
+			$sql = "select * from products where category = '".$category."' and id <> '".$pid."' ";
+			if($subcategory !=0){
+				$sql .=" and subcategory= '".$subcategory."'";
+			}
+			$sql.=" order by price asc limit ".$limit;
+			$query = $this->db->query($sql);
+			if($query->num_rows()>0){
+              return $query->result_array();
+			}else{
+				return array();
+			}
+
+		}else{
+			return array();
+		}
+	}
+   
 	
 }

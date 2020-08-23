@@ -23,10 +23,22 @@ class Product extends CI_Controller
 		$this->load->view('Site/shop',$data);
 	}
 
-	public function Shop_detail(){
-		$data['blogs'] = $this->common_model->GetAllData('blog',null,'id');
+	public function Shop_detail($pid){
+		//$data['blogs'] = $this->common_model->GetAllData('blog',null,'id');
 		$data['category'] = $this->common_model->GetAllData('category',null,'id');
-		$this->load->view('Site/shop_detail',$data);
+		$product= $this->common_model->GetSingleData('products',array('id '=> $pid));
+		if($product){
+			$data['product'] = $product;
+			$data['product_images']= 
+			$this->common_model->GetAllData('gallery_image',array('product_id '=> $pid),'id');
+			$data['product_options'] =$this->PM->getProductDetailOptions($pid);
+			$data['product_releted'] =$this->PM->getRelatedProduct($pid,$product['category'],$product['subcategory'],10);
+		     //showData($data);
+		    $this->load->view('Site/shop_detail',$data);
+		}else{
+			return redirect('shop');
+		}
+		
 	}
 
 	public function getFilterProduct(){
