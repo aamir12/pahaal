@@ -1,0 +1,440 @@
+[
+
+    {
+      type:'bannerSlider',
+      content:[
+                {
+                    align:'left',
+                    title:'DENIM ON DENIM',
+                    subtitle:'The best Online Shop',
+                    img:'/assets/bannernew2.jpg',
+                    buttonText:'SHOP NOW',
+                    color:'dar'
+                },
+                {
+                  align:'right',
+                  title:'Trending on Fashion',
+                  subtitle:'The best Online Shop',
+                  img:'/assets/bannernew.jpg',
+                  buttonText:'SHOP NOW'
+				},
+                {
+                  align:'left',
+                  title:'Special Clothing',
+                  subtitle:'The woodboom clothing is back at half price',
+                  img:'/assets/bannernew.jpg',
+                  buttonText:'SHOP NOW'
+				},
+                {
+                  align:'left',
+                  title:'Simplify Everything',
+                  subtitle:'The woodboom clothing is back at half price',
+                  img:'/assets/bannernew.jpg',
+                  buttonText:'SHOP NOW'
+				},
+                {
+                  align:'left',
+                  title:'BE TRENDY',
+                  subtitle:'Best T-shirt you could ever imagine',
+                  img:'/assets/bannernew.jpg',
+                  buttonText:'SHOP NOW'
+				},
+                {
+                  align:'left',
+                  title:'BIG SALE!',
+                  subtitle:'Best price, best Selection',
+                  img:'/assets/bannernew.jpg',
+                  buttonText:'SHOP NOW'
+				}
+      ]
+    },
+           
+  {
+          align:'left',
+          title:'Sale Clothing For Men',
+          subtitle:'Get Discount This Week',
+          img:'/assets/bannernew3.jpg',
+          type:'singlebanner',
+          textColor:"orange",
+          buttonText:'ORDER NOW'
+      },
+      {
+        align:'center',
+        title:'Right to Fashion sale',
+        subtitle:'50% - 70% Off',
+        img:'/assets/nn.jpg',
+        dark:true,
+        type:'singlebanner',
+        textColor:"orange",
+        buttonText:'SHOP NOW'
+    },
+    {
+      align:'right',
+      title:'Healthy',
+      subtitle:'Now 25% Off',
+      img:'/assets/bannernew4.jpg',
+      type:'singlebanner',
+      textColor:"orange",
+      buttonText:'ORDER NOW'
+  }
+  ,
+  {
+    type:'specialProducts',
+    subtitle:'Exclusive Products',
+    title:'Trending Products',
+    content:[
+      {
+        id:'1',
+        img:'/assets/1.jpg',
+        price:22.00,
+        qty:1,
+        currency:'$',
+        select:[
+          {
+            title:'Small',
+            price:22.00,
+            actualprice:55.00
+          },
+          {
+            title:'XXL',
+            price:35.00,
+            actualprice:100.00
+          }
+        ],
+        name:'Levis'
+      },
+      {
+        id:'2',
+        img:'/assets/111.jpg',
+        price:29.00,
+        actualprice:55.00,
+        currency:'$',
+        qty:1,
+        select:[],
+        name:'Red Saari'
+      },
+      {
+        id:'3',
+        img:'/assets/11.jpg',
+        price:29.00,
+        actualprice:55.00,
+        currency:'$',
+        qty:1,
+        select:[],
+        name:'Product 4'
+      }
+    ]
+  },
+  {
+    type:'specialProducts',
+    subtitle:'',
+    align:'left',
+    title:'New Products',
+    content:[
+      {
+        id:'1',
+        img:'/assets/2.jpg',
+        price:22.00,
+        qty:1,
+        currency:'$',
+        select:[
+          {
+            title:'Small',
+            price:22.00,
+            actualprice:55.00
+          },
+          {
+            title:'XXL',
+            price:35.00,
+            actualprice:100.00
+          }
+        ],
+        name:'T-shirt'
+      },
+      {
+        id:'2',
+        img:'/assets/3.jpg',
+        price:29.00,
+        actualprice:55.00,
+        currency:'$',
+        qty:1,
+        select:[],
+        name:'T-shirt'
+      },
+      {
+        id:'3',
+        img:'/assets/4.jpg',
+        price:29.00,
+        actualprice:55.00,
+        currency:'$',
+        qty:1,
+        select:[],
+        name:'Product 4'
+      }
+    ]
+  },
+  {
+    type:'specialProducts',
+    subtitle:'',
+    align:'left',
+    title:'Best Sellars',
+    content:[
+      {
+        id:'1',
+        img:'/assets/111.jpg',
+        price:22.00,
+        qty:1,
+        currency:'$',
+        select:[
+          {
+            title:'Small',
+            price:22.00,
+            actualprice:55.00
+          },
+          {
+            title:'XXL',
+            price:35.00,
+            actualprice:100.00
+          }
+        ],
+        name:'Red Saari'
+      },
+      {
+        id:'2',
+        img:'/assets/222.jpg',
+        price:29.00,
+        actualprice:55.00,
+        currency:'$',
+        qty:1,
+        select:[],
+        name:'Green Saari'
+      },
+      {
+        id:'3',
+        img:'/assets/333.jpg',
+        price:29.00,
+        actualprice:55.00,
+        currency:'$',
+        qty:1,
+        select:[],
+        name:'Product 4'
+      }
+    ]
+  },
+  {
+    align:'left',
+    title:'A Classic Addition',
+    subtitle:'Save 30% Off',
+    img:'/assets/bannernew5.jpg',
+    type:'singlebanner',
+    buttonText:'ORDER NOW',
+    textColor:"orange"
+}
+,
+{
+  align:'left',
+  title:'Healthy',
+  subtitle:'Save 20% Off',
+  img:'/assets/bannernew3.jpg',
+  type:'singlebanner',
+  buttonText:'ORDER NOW',
+  textColor:"orange"
+}
+
+,
+{
+  align:'left',
+  title:'Natural',
+  subtitle:'Save 35% Off',
+  img:'/assets/bannernew6.jpg',
+  type:'singlebanner',
+  buttonText:'ORDER NOW',
+  textColor:"green",
+}
+
+,
+{
+  align:'left',
+  title:'Product 5',
+  subtitle:'Save 15% Off',
+  img:'/assets/bannernew2.jpg',
+  type:'singlebanner',
+  buttonText:'ORDER NOW',
+  textColor:"red"
+},
+{
+  type:'dealsSlider',
+  title:'Deals Of The Day',
+  content:[
+  
+    {
+        img:'/assets/22.jpg',
+        name:'Collar T-shirt',
+        currency:'$',
+        price:35.00,
+        actualprice:40.00,
+        productdesc:'Add an extra dose of style with this raw look henley t-shirt from the house of Tinted.',
+    },
+    {
+      img:'/assets/33.jpg',
+      name:'T-shirt',
+      currency:'$',
+      price:35.00,
+      actualprice:40.00,
+      productdesc:'Add an extra dose of style with this raw look henley t-shirt from the house of Tinted.',
+  },
+  {
+    img:'/assets/44.jpg',
+    name:'T-shirt',
+    currency:'$',
+    price:35.00,
+    actualprice:40.00,
+    productdesc:'Add an extra dose of style with this raw look henley t-shirt from the house of Tinted.',
+}
+  ]
+},
+{
+  type:'productsContainer',
+  title:'New Product',
+  content:[
+  
+    {
+        img:'/assets/5.jpg',
+        name:'Curcuma T-shirt',
+        currency:'$',
+        price:22.00
+    },
+    {
+      img:'/assets/7.jpg',
+      name:'Neem Powder',
+      currency:'$',
+      price:22.00
+  },
+  {
+    img:'/assets/6.jpg',
+    name:'Collar T-shirt',
+    currency:'$',
+    price:22.00
+}
+  ]
+
+},
+
+
+{
+  type:"onlyImage",
+  img:'/assets/bannernew7.jpg',
+
+  
+},
+{
+  type:'userSlider',
+  content:[
+  {
+      name:'Mark Jecno',
+      title:'Web Designer',
+      img:'/assets/user1.webp',
+      desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper neque vestibulum arcu. Proin sollicitudin eleifend tortor quis bibendum.Vestibulum sollicitudin mi ac nunc posuere ultricies quis bibendum ac nunc posuere.'
+  },
+  {
+    name:'Mark Jecno',
+    title:'Web Developer',
+    img:'/assets/user2.webp',
+    desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper neque vestibulum arcu. Proin sollicitudin eleifend tortor quis bibendum.Vestibulum sollicitudin mi ac nunc posuere ultricies quis bibendum ac nunc posuere.'
+},
+{
+  name:'Mark Jecno',
+  title:'Web Designer',
+  img:'/assets/user3.webp',
+  desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper neque vestibulum arcu. Proin sollicitudin eleifend tortor quis bibendum.Vestibulum sollicitudin mi ac nunc posuere ultricies quis bibendum ac nunc posuere.'
+}
+  ]
+},
+{
+  type:'specialProducts',
+  subtitle:'Top Collections',
+  title:'Special Products',
+  content:[
+    {
+      id:'1',
+      img:'/assets/44.jpg',
+      price:22.00,
+      qty:1,
+      currency:'$',
+      select:[
+        {
+          title:'Small',
+          price:22.00,
+          actualprice:55.00
+        },
+        {
+          title:'XXL',
+          price:35.00,
+          actualprice:100.00
+        }
+      ],
+      name:'Full Sleve'
+    },
+    {
+      id:'2',
+      img:'/assets/55.jpg',
+      price:29.00,
+      actualprice:55.00,
+      currency:'$',
+      qty:1,
+      select:[],
+      name:'T-shirt'
+    },
+    {
+      id:'3',
+      img:'/assets/66.jpg',
+      price:29.00,
+      actualprice:55.00,
+      currency:'$',
+      qty:1,
+      select:[],
+      name:'Product 4'
+    }
+  ]
+},
+{
+  type:'blogSlider',
+  subtitle:'Recent Story',
+  title:'From The Blog',
+  content:[
+    {
+      id:'1',
+      img:'/assets/blog1.jpg',
+      title:"odio sed luctus. Etiam sit amet elit massa",
+      by:"Dhairya",
+      totalComments:5,
+      name:'Full Sleve',
+      date:24,
+      mont:"March"
+    },
+	{
+      id:'2',
+      img:'/assets/blog2.jpg',
+      title:"odio sed luctus. Etiam sit amet elit massa",
+      by:"Dhairya",
+      totalComments:5,
+      name:'Full Sleve',
+      date:24,
+      mont:"March"
+    },
+	{
+      id:'3',
+      img:'/assets/blog3.jpg',
+      title:"odio sed luctus. Etiam sit amet elit massa",
+      by:"Dhairya",
+      totalComments:5,
+      name:'Full Sleve',
+      date:24,
+      mont:"March"
+    }
+  ]
+}
+
+
+]
+  

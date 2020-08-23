@@ -1,0 +1,133 @@
+[01-May-2020 12:59:56 Etc/GMT] PHP Fatal error:  Cannot redeclare Content::about_page_add() in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Admin/Content.php on line 152
+[01-May-2020 12:59:59 Etc/GMT] PHP Fatal error:  Cannot redeclare Content::about_page_add() in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Admin/Content.php on line 152
+[01-May-2020 13:02:43 Etc/GMT] PHP Fatal error:  Cannot redeclare Content::about_page_delete() in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Admin/Content.php on line 177
+[01-May-2020 13:02:45 Etc/GMT] PHP Fatal error:  Cannot redeclare Content::about_page_delete() in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Admin/Content.php on line 177
+[02-May-2020 05:18:02 Etc/GMT] PHP Parse error:  syntax error, unexpected ';' in /home/webwiqpq/public_html/WEB01/Redance/application/views/Admin/contact_request.php on line 52
+[02-May-2020 06:19:08 Etc/GMT] PHP Parse error:  syntax error, unexpected ''nicename'' (T_CONSTANT_ENCAPSED_STRING) in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Auth.php on line 103
+[02-May-2020 06:19:10 Etc/GMT] PHP Parse error:  syntax error, unexpected ''nicename'' (T_CONSTANT_ENCAPSED_STRING) in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Auth.php on line 103
+[02-May-2020 06:19:12 Etc/GMT] PHP Parse error:  syntax error, unexpected ''nicename'' (T_CONSTANT_ENCAPSED_STRING) in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Auth.php on line 103
+[02-May-2020 06:29:05 Etc/GMT] PHP Parse error:  syntax error, unexpected 'Lato' (T_STRING) in /home/webwiqpq/public_html/WEB01/Redance/application/models/Common_model.php on line 160
+[02-May-2020 06:31:37 Etc/GMT] PHP Parse error:  syntax error, unexpected 'Lato' (T_STRING) in /home/webwiqpq/public_html/WEB01/Redance/application/models/Common_model.php on line 160
+[02-May-2020 06:31:42 Etc/GMT] PHP Parse error:  syntax error, unexpected 'Lato' (T_STRING) in /home/webwiqpq/public_html/WEB01/Redance/application/models/Common_model.php on line 160
+[02-May-2020 06:33:58 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/webwiqpq/public_html/WEB01/Redance/application/models/Common_model.php on line 232
+[02-May-2020 06:34:00 Etc/GMT] PHP Parse error:  syntax error, unexpected ')' in /home/webwiqpq/public_html/WEB01/Redance/application/models/Common_model.php on line 232
+[02-May-2020 07:17:25 Etc/GMT] PHP Parse error:  syntax error, unexpected ';' in /home/webwiqpq/public_html/WEB01/Redance/application/views/Site/email_verify.php on line 30
+[02-May-2020 07:17:27 Etc/GMT] PHP Parse error:  syntax error, unexpected ';' in /home/webwiqpq/public_html/WEB01/Redance/application/views/Site/email_verify.php on line 30
+[04-May-2020 07:47:34 Etc/GMT] PHP Fatal error:  Call to undefined method Video::check_login() in /home/webwiqpq/public_html/WEB01/Redance/application/controllers/Admin/Video.php on line 9
+[07-May-2020 09:36:33 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:37:46 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:38:35 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:38:43 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:38:52 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:39:03 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:39:13 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:39:22 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:39:31 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:39:40 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:39:50 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:39:58 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:40:07 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:40:17 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:40:26 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:40:35 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:40:44 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:40:53 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:41:02 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:41:03 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:43:54 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:44:03 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:44:12 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:44:21 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:44:22 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:44:53 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:45:03 Etc/GMT] assets/upload/original-video/
+[07-May-2020 09:45:13 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:14:12 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:14:17 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:14:25 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:18:57 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:19:02 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:27:20 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:27:28 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:27:37 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:27:43 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:27:49 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:27:58 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:08 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:16 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:22 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:31 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:37 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:43 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:51 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:28:56 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:29:04 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:29:13 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:29:20 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:29:21 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:35:37 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:35:42 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:35:49 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:42:15 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:42:24 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:42:32 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:45:24 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:45:33 Etc/GMT] assets/upload/original-video/
+[07-May-2020 10:45:42 Etc/GMT] assets/upload/original-video/
+[07-May-2020 11:00:10 Etc/GMT] assets/upload/original-video/
+[07-May-2020 11:00:13 Etc/GMT] assets/upload/original-video/
+[11-May-2020 11:36:09 Etc/GMT] assets/upload/original-video/
+[11-May-2020 11:36:14 Etc/GMT] assets/upload/original-video/
+[12-May-2020 10:17:12 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:02:09 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:02:12 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:04:05 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:04:10 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:08:02 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:08:06 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:23:01 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:23:05 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:42:22 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:42:26 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:49:10 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:49:14 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:51:17 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:51:22 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:53:08 Etc/GMT] assets/upload/original-video/
+[13-May-2020 12:53:11 Etc/GMT] assets/upload/original-video/
+[13-May-2020 13:07:42 Etc/GMT] assets/upload/original-video/
+[13-May-2020 13:07:51 Etc/GMT] assets/upload/original-video/
+[13-May-2020 13:07:59 Etc/GMT] assets/upload/original-video/
+[13-May-2020 13:11:25 Etc/GMT] assets/upload/original-video/
+[13-May-2020 13:11:29 Etc/GMT] assets/upload/original-video/
+[13-May-2020 13:29:41 Etc/GMT] assets/upload/original-video/
+[13-May-2020 13:29:45 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:05:58 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:06:03 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:22:54 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:22:58 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:39:48 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:39:52 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:42:00 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:42:04 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:45:36 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:46:08 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:46:13 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:49:27 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:49:32 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:53:10 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:53:15 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:58:07 Etc/GMT] assets/upload/original-video/
+[15-May-2020 12:58:10 Etc/GMT] assets/upload/original-video/
+[15-May-2020 13:02:57 Etc/GMT] assets/upload/original-video/
+[15-May-2020 13:03:03 Etc/GMT] assets/upload/original-video/
+[15-May-2020 13:04:25 Etc/GMT] assets/upload/original-video/
+[15-May-2020 13:04:28 Etc/GMT] assets/upload/original-video/
+[08-Jun-2020 02:28:42 America/Chicago] PHP Fatal error:  Cannot redeclare Home::edit_hotel() in /home/vitalqzv/public_html/covid19/application/controllers/Admin/Home.php on line 153
+[08-Jun-2020 02:28:50 America/Chicago] PHP Fatal error:  Cannot redeclare Home::edit_hotel() in /home/vitalqzv/public_html/covid19/application/controllers/Admin/Home.php on line 153
+[08-Jun-2020 02:28:52 America/Chicago] PHP Fatal error:  Cannot redeclare Home::edit_hotel() in /home/vitalqzv/public_html/covid19/application/controllers/Admin/Home.php on line 153
+[08-Jun-2020 02:29:26 America/Chicago] PHP Fatal error:  Cannot redeclare Home::edit_hotel() in /home/vitalqzv/public_html/covid19/application/controllers/Admin/Home.php on line 153
+[12-Jun-2020 10:28:24 UTC] PHP Fatal error:  Cannot redeclare Division::add_division() in /home/vitalqzv/public_html/covid19/application/controllers/Admin/Division.php on line 123
+[12-Jun-2020 11:08:23 UTC] PHP Fatal error:  Cannot redeclare Admin::community() in /home/vitalqzv/public_html/covid19/application/controllers/Admin/Admin.php on line 356
+[29-Jun-2020 10:18:15 UTC] PHP Fatal error:  Cannot use [] for reading in /home/vitalqzv/public_html/covid19/application/controllers/Api.php on line 679
+[11-Jul-2020 08:23:10 UTC] PHP Fatal error:  Cannot redeclare Api::login() in /home/vitalqzv/public_html/tradie_quotes/application/controllers/Api.php on line 294
