@@ -176,6 +176,30 @@ class Product_model extends CI_Model {
 			return array();
 		}
 	}
+
+	function getProductsData($where=null,$ob=null,$obc='desc',$limit=null){
+		$this->db->select('p.*,pov.povid');
+		$this->db->from('products  as p');
+		$this->db->join('product_option_value  as pov', 'pov.productId  = p.id','left');
+		if($where) {
+		  $this->db->where($where);
+		}
+		if($ob) {
+		  $this->db->order_by($ob,$obc);
+		}
+		if($limit) {
+		  $this->db->limit($limit);
+		}
+		
+		$query = $this->db->get();
+		if($query->num_rows()) {  
+		  return $query->result_array();
+		} else {
+		  return array();
+		}
+	}
+
+
    
 	
 }

@@ -9,6 +9,7 @@ class Home extends CI_Controller
 	
 	public function __construct() {
 		parent::__construct();
+		$this->load->model('product_model','PM');
 	}
 
 	public function index(){
@@ -17,26 +18,22 @@ class Home extends CI_Controller
 		$data['blogs'] = $this->common_model->GetAllData('blog',null,'id');
 		$data['page_content']= $this->common_model->GetSingleData('page_content',array('id'=>1));
 
-		$data['new_products']= $this->common_model->GetAllDataLimit('products',null,'id','desc','10');
-		$special_condition="special='on'";
-		$data['special_products']= $this->common_model->GetAllDataLimit('products',$special_condition,'id','desc','10');
+		$data['new_products']= $this->PM->getProductsData(null,'p.id','desc','10');
+		$special_condition="p.special='on'";
+		$data['special_products']= $this->PM->getProductsData($special_condition,'p.id','desc','10');
+		$data['special_products_all']= $this->PM->getProductsData($special_condition,'p.id','desc');
 
-		$data['special_products_all']= $this->common_model->GetAllData('products',$special_condition,'id','desc');
+        $men_product_condition="p.category='5'";
+		$data['men_products']= $this->PM->getProductsData($men_product_condition,'p.id','desc');
 
-        $men_product_condition="category='5'";
-		$data['men_products']= $this->common_model->GetAllData('products',$men_product_condition,'id','desc');
+		$women_product_condition="p.category='6'";
+		$data['women_products']= $this->PM->getProductsData($women_product_condition,'p.id','desc');
 
-		$women_product_condition="category='6'";
-		$data['women_products']= $this->common_model->GetAllData('products',$women_product_condition,'id','desc');
+		$boy_product_condition="p.category='7'";
+		$data['boy_products']= $this->PM->getProductsData($boy_product_condition,'p.id','desc');
 
-		$boy_product_condition="category='7'";
-		$data['boy_products']= $this->common_model->GetAllData('products',$boy_product_condition,'id','desc');
-
-		$girl_product_condition="category='8'";
-		$data['girl_products']= $this->common_model->GetAllData('products',$girl_product_condition,'id','desc');
-		
-
-
+		$girl_product_condition="p.category='8'";
+		$data['girl_products']= $this->PM->getProductsData($girl_product_condition,'p.id','desc');
 		$this->load->view('Site/index',$data);
 	}
 

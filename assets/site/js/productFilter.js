@@ -1,4 +1,3 @@
-
 let url = window.location.search;
 function getParameterByName(name) {
     if (!url) url = window.location.href;
@@ -66,12 +65,12 @@ function clearAll(){
 }
 
 function filter(extinfo = ''){
-	if ($(window).width() > 991) {
+	/*if ($(window).width() > 991) {
 		$(".collection-wrapper").css("opacity","0.2");
 		
 	}else {
 		$(".collection-product-wrapper").css("opacity","0.2");
-	}
+	}*/
 
 	$("#filterFrm").serialize();
 	var data = $("#filterFrm").serialize();
@@ -126,11 +125,17 @@ function filter(extinfo = ''){
         type: "get",
         data: data,
         url: `${site_url}Site/Product/getFilterProduct`,
+        beforeSend: function(){
+	        $(".loader").fadeIn("slow");
+	        
+	        
+	    },
         success: function (result) {
 			let data = JSON.parse(result);
 			if(data.status){
 				console.log(data.sql);
 				setTimeout(function(){
+					$(".loader").fadeOut("slow");
 					$("#productResult").html(data.productHtml);
 					if(data.totalProducts>data.perPage){
 					   $("#pageHtml").html(data.pageHtml);
@@ -140,7 +145,7 @@ function filter(extinfo = ''){
 					}else{
 						$("#pageDiv").hide();
 					} 
-					$(".collection-wrapper, .collection-product-wrapper").css("opacity","1");
+					//$(".collection-wrapper, .collection-product-wrapper").css("opacity","1");
 				}, 1500);
 
 			}else{
@@ -148,7 +153,8 @@ function filter(extinfo = ''){
 					let html = "<div class='text-center'><h4>No matching product found</h4></div>";
 					$("#productResult").html(html);
 					$("#pageDiv").hide();
-					$(".collection-wrapper, .collection-product-wrapper").css("opacity","1");
+					//$(".collection-wrapper, .collection-product-wrapper").css("opacity","1");
+					$(".loader").fadeOut("slow");
 				}, 1500);
 			}
 			
@@ -166,7 +172,8 @@ function filter(extinfo = ''){
 			
 			setTimeout(function(){
 				$("#pageDiv").hide();
-				$(".collection-wrapper, .collection-product-wrapper").css("opacity","1");
+				$(".loader").fadeOut("slow");
+				//$(".collection-wrapper, .collection-product-wrapper").css("opacity","1");
 			}, 1500);
 		}
 

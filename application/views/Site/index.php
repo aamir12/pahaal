@@ -1088,10 +1088,124 @@
    </section>
    <!-- Product slider end -->
 </div>
+<div id="shopify-section-1582109078318" class="shopify-section sectionn_usddddd">
+   <section class="banner-padding collection_banner   " style="padding: 70px 0px 0px 0px;">
+      <div class="container">
+         <div class="row partition2 ">
+            <div class="col-md-6" style="padding: 0px 15px 0px 15px ">
+               <div class="collection-banner p-left text-left  deee1">
+                  <a href="">
+                     <div class="banner-img">
+                        <img src="<?=site_url();?>/assets/img/default_image/<?=$page_content['six_b']; ?>"    class="img-fluid lazyautosizes lazyloaded" alt="" sizes="670px" >
+                     </div>
+                  </a>
+                  <div class="contain-banner">
+                     <a href="">
+                     </a>
+                     <div>
+                        <a href="">
+                           <h4 style="color: #fff">
+                              <?=$page_content['six_b_top_heading']; ?>
+                           </h4>
+                           <h2 style="color: #fff;">
+                             <?=$page_content['six_b_heading']; ?>
+                           </h2>
+                        </a>
+                        <a href="<?=$page_content['six_b_link']; ?>" class="btn btn-solid">
+                        Shop Now 
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="collection-banner p-left text-left deee2">
+                  <a href="">
+                     <div class="banner-img">
+                        <img src="<?=site_url();?>/assets/img/default_image/<?=$page_content['sev_b']; ?>" sizes="670px"  class="img-fluid lazyautosizes lazyloaded" alt="">
+                     </div>
+                  </a>
+                  <div class="contain-banner">
+                     <a href="">
+                     </a>
+                     <div>
+                        <a href="">
+                           <h4 style="color: #fff">
+                              <?=$page_content['sev_b_top_heading']; ?>
+                           </h4>
+                           <h2 style="color: #fff;">
+                              <?=$page_content['sev_b_heading']; ?>
+                           </h2>
+                        </a>
+                        <a href="<?=$page_content['sev_b_link']; ?>" class="btn btn-solid">
+                        Shop Now 
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+                  
+               
+            </div>
+            <div class="col-md-6" style="padding: 0px 15px 0px 15px ">
+               
+                <div class="collection-banner p-left text-left deee3">
+                  <a href="">
+                     <div class="banner-img">
+                        <img src="<?=site_url();?>/assets/img/default_image/<?=$page_content['ei_b']; ?>"  sizes="670px"  >
+                     </div>
+                  </a>
+                  <div class="contain-banner">
+                     <a href="">
+                     </a>
+                     <div>
+                        <a href="">
+                           <h4 style="color: #fff">
+                              <?=$page_content['ei_b_top_heading']; ?>
+                           </h4>
+                           <h2 style="color: #fff;">
+                             <?=$page_content['ei_b_heading']; ?>
+                           </h2>
+                        </a>
+                        <a href="<?=$page_content['ei_b_link']; ?>" class="btn btn-solid">
+                        Shop Now 
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="collection-banner p-left text-left deee4">
+                  <a href="">
+                     <div class="banner-img">
+                        <img src="<?=site_url();?>/assets/img/default_image/<?=$page_content['ni_b']; ?>" class="img-fluid lazyautosizes lazyloaded" alt=""  sizes="670px"  >
+                     </div>
+                  </a>
+                  <div class="contain-banner">
+                     <a href="">
+                     </a>
+                     <div>
+                        <a href="">
+                           <h4 style="color: #fff">
+                              <?=$page_content['ni_b_top_heading']; ?>
+                           </h4>
+                           <h2 style="color: #fff;">
+                              <?=$page_content['ni_b_heading']; ?>
+                           </h2>
+                        </a>
+                        <a href="<?=$page_content['ni_b_link']; ?>" class="btn btn-solid">
+                        Order Now 
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         
+         </div>
+      </div>
+   </section>
+   
+</div>
 
 
-
- <div id="shopify-section-1586924009295" class="shopify-section sectionn_us6">
+ <div id="shopify-section-1586924009295" class="shopify-section sectionn_us6" style="display: none;">
    <section class="banner-padding collection_banner masonry_main  " style="padding: 50px 0px 50px 0px;">
       <div class="container">
          <div class="row partition2 grid" style="position: relative; height: 1162.08px;">

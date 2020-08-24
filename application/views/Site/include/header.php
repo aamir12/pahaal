@@ -208,6 +208,31 @@
                         <div class="menu-right pull-right addd_ii">
                            <div class="icon-nav">
                               <ul class="header-dropdown">
+
+                <li class="onhover-div mobile-search">
+                  <div><img src="//cdn.shopify.com/s/files/1/0358/5507/3324/t/2/assets/search.png?v=16905231596290706977" onclick="openSearch()" class="img-fluid" alt="">
+                    <i class="ti-search" onclick="openSearch()"></i></div>
+                  <div id="search-overlay" class="search-overlay">
+                    <div>
+                      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                      <div class="overlay-content">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-xl-12">
+                              <form action="/search" method="get" role="search">
+                                <div class="form-group">
+                                  <input type="search" class="form-control" name="q" placeholder="Search products">
+                                </div>
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                
                                  <li class="mobile-wishlist">
                                     <a href="<?=base_url();?>wishlist">
                                        <div>
@@ -235,14 +260,56 @@
                                     </ul>
                                  </li>
 
-                                 <li class="mobile-cart">
-                                    <a href="<?=base_url();?>cart">
-                                       <div>
-                                          <img src="<?=site_url();?>/assets/img/cart.png" alt="cart">
-                                          <i class="ti-bag fixed_cart" aria-hidden="true"></i>
-                                       </div>
-                                    </a>
-                                 </li>
+                                
+                                 <li class="onhover-div mobile-cart">
+                  <div>
+                    
+                      <img src="<?=site_url();?>/assets/img/cart.png" alt="cart">
+                      <i class="ti-bag fixed_cart"></i>
+                      
+
+                    <span class="cart_qty_cls">1</span>
+                  </div>
+
+                  
+                 <!--  <ul class="show-div shopping-cart" id="cart_container_id"> 
+
+<form action="" method="post" novalidate="" class="cart_ajax_silder_form">
+<li>
+  <div class="media">
+    <a href="#">
+      <img class="mr-3" src="https://cdn.shopify.com/s/files/1/0358/5507/3324/products/image_17_536531d4-1dbd-49d7-ab03-471ce0db4d59_small.png?v=1585052877" alt="Unique Laving">
+  </a>
+    <div class="media-body">
+      <a href="#">
+      <h4 class="lang_trans" data-trans="#ajax_cart33046379626540">Unique Laving</h4>
+      <span class="hide" id="ajax_cart33046379626540">Unique Laving</span>
+  </a>
+      <h4><em>1 x </em><span class="money" data-currency-usd="$50.00 USD" data-currency="USD">$50.00 USD</span></h4>
+  </div>
+  </div>
+  <div class="close-circle">
+    <a href="javascript:void(0)" class="cart_remove_item" >
+      <i class="fa fa-times"></i>
+  </a>
+  </div>
+  </li>
+<li>
+  <div class="total">
+    <h5>subtotal : <span class="money" data-currency-usd="$50.00 USD" data-currency="USD">$50.00 USD</span></h5>
+  </div>
+  </li>
+<li>
+  <div class="buttons">
+    <a href="#" class="view-cart">view cart</a>
+    <button type="submit" name="checkout" class="checkout">Checkout</button>
+  </div>
+  </li>
+  </form>
+
+</ul>
+         -->          
+                </li>
                                  
                               </ul>
                            </div>
@@ -383,4 +450,12 @@
     })
 
 /*nav*/
+
+
+function openSearch() {
+    document.getElementById("search-overlay").style.display = "block";
+  }
+   function closeSearch() {
+    document.getElementById("search-overlay").style.display = "none";
+  } 
 </script>

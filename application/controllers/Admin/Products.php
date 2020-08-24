@@ -86,20 +86,24 @@ class Products extends CI_Controller{
 					$product_options = $this->input->post('product_option');
 					foreach ($product_options as $product_option) {
 						if ($product_option['type'] == 'select' || $product_option['type'] == 'radio' || $product_option['type'] == 'checkbox' ) {
-						$poData['productId'] = 	$product_id;
-						$poData['productOptionId']	 = $product_option['option_id'];
-						$this->common_model->InsertData('product_option',$poData);
-						$poId =  $this->db->insert_id();
 							if (isset($product_option['product_option_value'])) {
-								foreach ($product_option['product_option_value'] as $product_option_value) {
-									$povData['poId'] = $poId;
-									$povData['productId'] = $product_id;
-									$povData['productOptionId'] = $product_option['option_id'];
-									$povData['productOptionValueId'] = $product_option_value['option_value_id'];
-									$povData['quantity'] = $product_option_value['quantity'];
-									$povData['price'] = $product_option_value['price'];
-									$this->common_model->InsertData('product_option_value',$povData);
+								if(count($product_option['product_option_value'])>0){
+									$poData['productId'] = 	$product_id;
+									$poData['productOptionId']	 = $product_option['option_id'];
+									$this->common_model->InsertData('product_option',$poData);
+									$poId =  $this->db->insert_id();
+
+									foreach ($product_option['product_option_value'] as $product_option_value) {
+										$povData['poId'] = $poId;
+										$povData['productId'] = $product_id;
+										$povData['productOptionId'] = $product_option['option_id'];
+										$povData['productOptionValueId'] = $product_option_value['option_value_id'];
+										$povData['quantity'] = $product_option_value['quantity'];
+										$povData['price'] = $product_option_value['price'];
+										$this->common_model->InsertData('product_option_value',$povData);
+									}
 								}
+								
 							}
 						} 
 					}

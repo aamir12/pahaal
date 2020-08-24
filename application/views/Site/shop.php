@@ -1,6 +1,19 @@
 <?php
    include_once('include/header.php'); 
-   ?>
+?>
+<style type="text/css">
+     .loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('<?=base_url();?>assets/img/default_image/<?=$default_content['loader_image'] ?>') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+    background-size: 300px;
+}
+</style>
 <!-- breadcrumb start -->
 <div class="breadcrumb-section">
    <div class="container">
@@ -15,7 +28,7 @@
          <div class="col-sm-6">
             <nav aria-label="breadcrumb" class="theme-breadcrumb">
                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="/" >Home</a></li>
+                  <li class="breadcrumb-item"><a href="<?=site_url()?>" >Home</a></li>
                   <li class="breadcrumb-item active " >
                      Shop
                   </li>
@@ -26,7 +39,7 @@
    </div>
 </div>
 <!-- breadcrumb End -->
-<div id="shopify-section-collection-left-sidebar-template" class="shopify-section">
+<div id="shopify-section-collection-left-sidebar-template" class="shopify-section sectionn_us2">
    <!-- section start -->
    <section class="section-big-pt-space ratio_asos left-sidebar-collection">
       <div class="collection-wrapper">
@@ -364,6 +377,7 @@
                                           </div>
                                        </div>
                                     </div>
+                                    <div class="loader"></div>
                                  </div>
                               </div>
                            </div>
@@ -377,7 +391,7 @@
       </div>
    </section>
    <!-- section End -->
-   <script>
+<script>
       
       $(document).ready(function() {
         if ($(window).width() > 991) {
@@ -385,7 +399,7 @@
         }
       });
       
-   </script>
+</script>
 </div>
 
 <script src="<?=site_url();?>/assets/site/js/productFilter.js" ></script>  

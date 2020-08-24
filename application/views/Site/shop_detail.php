@@ -294,9 +294,9 @@
                         <a class="action--wishlist tile-actions--btn flex wishlist-btn" href="javascript:void(0)" title="Wishlist" data-product-handle="<?=$pr['title']?>">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                         </a>
-                        <a class="quick-view" href="#quick-view-product" data-id="4779643961388" data-handle="<?=$pr['title']?>" data-toggle="tooltip" data-placement="top" title="Quick View">
-                        <i class="ti-eye"></i>
-                        </a>
+                        <a class="quick-view" data-lightbox="image-1" href="<?=$prImgUrl?>"  title="<?=$pr['title']?>">
+                                       <i class="ti-eye"></i>
+                                       </a>
                      </div>
                   </div>
                   <div class="product-detail text-center ">
