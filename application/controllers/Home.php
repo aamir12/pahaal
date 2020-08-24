@@ -22,7 +22,19 @@ class Home extends CI_Controller
 		$data['special_products']= $this->common_model->GetAllDataLimit('products',$special_condition,'id','desc','10');
 
 		$data['special_products_all']= $this->common_model->GetAllData('products',$special_condition,'id','desc');
-		$data['new_products_all']= $this->common_model->GetAllData('products',null,'id','desc');
+
+        $men_product_condition="category='5'";
+		$data['men_products']= $this->common_model->GetAllData('products',$men_product_condition,'id','desc');
+
+		$women_product_condition="category='6'";
+		$data['women_products']= $this->common_model->GetAllData('products',$women_product_condition,'id','desc');
+
+		$boy_product_condition="category='7'";
+		$data['boy_products']= $this->common_model->GetAllData('products',$boy_product_condition,'id','desc');
+
+		$girl_product_condition="category='8'";
+		$data['girl_products']= $this->common_model->GetAllData('products',$girl_product_condition,'id','desc');
+		
 
 
 		$this->load->view('Site/index',$data);

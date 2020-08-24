@@ -55,6 +55,10 @@ class Product extends CI_Controller
 		   $result['status'] = true;
 		   $html = '';
 		   foreach ($products['result'] as $p) {
+				$pImgUrl = site_url().'assets/img/defaultProduct.jpg';
+				if($p['image']!=""){
+			    	$pImgUrl = site_url().'assets/img/product_image/'.$p['image'];
+				}
 			   $html .='<div class="col-xl-4 col-md-6 col-grid-box ">
 			   <div class="product-box product-wrap" >
 				  <div class="img-wrapper">
@@ -62,13 +66,13 @@ class Product extends CI_Controller
 					 </div>
 					 <div class="front">
 						<a href="'.site_url().'shop_detail/'.$p['prodId'].'">
-						<img src="'.site_url().'assets/img/product_image/'.$p['image'].'" 
+						<img src="'.$pImgUrl.'" 
 						   class="lazyload  img-fluid  w-100" style="width:298px;height:298px;" alt="'.$p['title'].'" >
 						</a>
 					 </div>
 					 <div class="back">
 						<a href="'.site_url().'shop_detail/'.$p['prodId'].'">
-						<img src="'.site_url().'assets/img/product_image/'.$p['image'].'" 
+						<img src="'.$pImgUrl.'" 
 						   class="lazyload  img-fluid  w-100" alt="'.$p['title'].'" style="width:298px;height:298px;" >
 						</a>
 					 </div>
@@ -126,10 +130,6 @@ class Product extends CI_Controller
 		}
 		echo json_encode($result);
 	}
-
-	
-
-	
 
 }
 

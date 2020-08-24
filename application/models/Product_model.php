@@ -26,7 +26,7 @@ class Product_model extends CI_Model {
 						$product_option_value_data[] = array(
 							'product_option_value_id' => $product_option_value['povid'],                    
 							'quantity'                => $product_option_value['quantity'],
-							'price'                   => $product_option_value['price'],
+							'price'                   => round($product_option_value['price'],0),
 							'option_value_id'         => $product_option_value['productOptionValueId'],
 							'name'                   => $product_option_value['optionKey']
 							
@@ -102,7 +102,7 @@ class Product_model extends CI_Model {
 		$limit = $params['pagination']['limit'];
 		$start = $page * $limit;
 
-		$sql = "SELECT *,p.price as prodPrice,p.id as prodId FROM products p
+		$sql = "SELECT *, round(p.price, 0) as prodPrice,p.id as prodId FROM products p
 		    left join category  c on p.category = c.id 
 			left join subcategory sc on sc.id = p.subcategory 
 			left join product_option_value  pov on p.id = pov.productId 
@@ -160,7 +160,7 @@ class Product_model extends CI_Model {
 
 	public function getRelatedProduct($pid,$category=0,$subcategory=0,$limit=10){
 		if($category!=0){
-			$sql = "select * from products where category = '".$category."' and id <> '".$pid."' ";
+			$sql = "select *,round(price, 0) as price from products where category = '".$category."' and id <> '".$pid."' ";
 			if($subcategory !=0){
 				$sql .=" and subcategory= '".$subcategory."'";
 			}

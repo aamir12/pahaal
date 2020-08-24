@@ -81,7 +81,7 @@
                                     <?php
                                 }
                                 if($default_content['about_page']!='on'){
-                                    ?><li><a href="<?=base_url();?>"   style="color: var(--footer-color);">About us</a></li>
+                                    ?><li><a href="<?=base_url();?>about-us"   style="color: var(--footer-color);">About us</a></li>
                                     <?php
                                 }
                                 if($default_content['shop_page']!='on'){
@@ -92,7 +92,7 @@
                                     ?><li><a href="<?=base_url();?>"   style="color: var(--footer-color);">Blog</a></li><?php
                                 }
                                 if($default_content['contact_page']!='on'){
-                                    ?><li><a href="<?=base_url();?>" style="color: var(--footer-color);">Contact Us</a></li><?php
+                                    ?><li><a href="<?=base_url();?>contact-us" style="color: var(--footer-color);">Contact Us</a></li><?php
                                 }
                               ?>
                               
@@ -111,28 +111,35 @@
                         <div class="footer-contant">
                            <ul>
                               <li>
-                                 <a href="https://ps-grocerykart.myshopify.com/account/login" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_login">
+                                 <a href="<?=base_url();?>login" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_login">
                                  Login
                                  </a>
                                  <span class="hide" id="footer1_login">Login</span>
                               </li>
+                              
                               <li>
-                                 <a href="https://ps-grocerykart.myshopify.com/account/register" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_create-account">
-                                 Create Account
-                                 </a>
-                                 <span class="hide" id="footer1_create-account">Create Account</span>
-                              </li>
-                              <li>
-                                 <a href="https://ps-grocerykart.myshopify.com/cart" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_my-cart">
+                                 <a href="<?=base_url();?>cart" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_my-cart">
                                  My Cart
                                  </a>
                                  <span class="hide" id="footer1_my-cart">My Cart</span>
                               </li>
                               <li>
-                                 <a href="https://ps-grocerykart.myshopify.com/pages/wishlist" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_wishlist">
+                                 <a href="<?=base_url();?>wishlist" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_wishlist">
                                  Wishlist
                                  </a>
                                  <span class="hide" id="footer1_wishlist">Wishlist</span>
+                              </li>
+                              <li>
+                                 <a href="<?=base_url();?>terms-and-condition" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_create-account">
+                                 Terms and conditions
+                                 </a>
+                                 <span class="hide" id="footer1_create-account">Terms and conditions</span>
+                              </li>
+                              <li>
+                                 <a href="<?=base_url();?>privacy-policy" style="color: var(--footer-color)" class="lang_trans" data-trans="#footer1_create-account">
+                                 Privacy policy
+                                 </a>
+                                 <span class="hide" id="footer1_create-account">Privacy policy</span>
                               </li>
                            </ul>
                         </div>

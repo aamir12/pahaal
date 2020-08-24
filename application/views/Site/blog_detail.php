@@ -75,7 +75,12 @@
           <li><?=date("F d, Y", strtotime($blog_detail['cdate'])); ?></li>
           
           
-          <li>Posted By : admin </li>
+          <li>Posted By : <?php
+
+            $admin_blog= $this->common_model->GetSingleData('admin',array('id'=>$blog_detail['added_by']));
+            echo $admin_blog['fname'].' '.$admin_blog['lname'];
+            ?>
+          </li>
           
           
           <!-- <li><i class="fa fa-comments"></i> 0comments</li> -->

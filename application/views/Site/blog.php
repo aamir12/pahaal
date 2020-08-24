@@ -1,5 +1,6 @@
 <?php
    include_once('include/header.php'); 
+   
 ?>
 
 
@@ -94,7 +95,12 @@
                            </p>
                            </div>
                            <h6>
-                              By: admin
+                              Posted By:
+                              <?php
+
+                              $admin= $this->common_model->GetSingleData('admin',array('id'=>$blog_limited['added_by']));
+                              echo $admin['fname'].' '.$admin['lname'];
+                              ?>
                               
                            </h6>
                         </div>
@@ -108,7 +114,7 @@
                      <div class="col-md-12" >
                      <div class="outer-blog">
                         
-                        No Blog found.
+                        No Blog Found
                      </div>
                     </div>
                      <?php
@@ -182,7 +188,13 @@
         </a>
         <ul class="post-social">
           
-          <li>Posted By : admin </li>
+          <li>Posted By : 
+            <?php
+
+            $admin_blog= $this->common_model->GetSingleData('admin',array('id'=>$blog['added_by']));
+            echo $admin_blog['fname'].' '.$admin_blog['lname'];
+            ?>
+          </li>
           
           
           
@@ -208,7 +220,7 @@
         
        
                 
-
+<?= $this->pagination->create_links() ?>
         <div class="pagination-class">
         <ul class="pagination">
   

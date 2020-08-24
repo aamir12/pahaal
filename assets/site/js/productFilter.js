@@ -129,6 +129,7 @@ function filter(extinfo = ''){
         success: function (result) {
 			let data = JSON.parse(result);
 			if(data.status){
+				console.log(data.sql);
 				setTimeout(function(){
 					$("#productResult").html(data.productHtml);
 					if(data.totalProducts>data.perPage){

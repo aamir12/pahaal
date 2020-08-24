@@ -1,72 +1,7 @@
 <?php
    include_once('include/header.php'); 
    ?>
-<style>
-.colorsCont {
-  display: inline-block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 14px;
-    vertical-align: middle;
-    line-height: 30px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.colorsCont input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.colorsCont .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 28px;
-  width: 28px;
-  background-color: red;
-  border-radius:50%;
-}
-
-
-
-/* When the checkbox is checked, add a blue background */
-.colorsCont input:checked ~ .checkmark {
-  background-color: red;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.colorsCont input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.colorsCont .checkmark:after {
-  left: 0px;
-  top: 0px;
-  width: 28px;
-  height: 28px;
-  border: solid 4px #898989;
-  border-radius:50%;
-}
-</style>
-
+<link rel="stylesheet" href="<?=site_url().'assets/site/css/radio_checkbox.css'?>">
 <!-- breadcrumb start -->
 <div class="breadcrumb-section">
    <div class="container">
@@ -83,7 +18,7 @@
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="<?=site_url()?>" >Home</a></li>
                   <li class="breadcrumb-item active " >
-						<?=$product['title']?>
+						  Product Detail
                   </li>
                </ol>
             </nav>
@@ -100,24 +35,25 @@
       <div class="collection-wrapper">
          <div class="container">
             <div class="row">
-					<?php 
-					  if($product['image']!="" || count($product_images)>0){
-					?>
+					
                <div class="col-lg-6">
                   <div class="product-slick">
 							<?php 
-							  if($product['image']!=""){
-								  ?>
+							   $pimgUrl = site_url().'assets/img/defaultProduct.jpg';
+							   if($product['image']!=""){
+								  $pimgUrl = site_url().'assets/img/product_image/'.$product['image'];
+							   }
+							?>
 								<div id="FeaturedImageZoom-product-template-15090218041388-wrapper">
-									<img itemprop="image" src="<?=site_url().'assets/img/product_image/'.$product['image']?>" 
-									data-src="<?=site_url().'assets/img/product_image/'.$product['image']?>" 
+									<img itemprop="image" src="<?=$pimgUrl?>" 
+									data-src="<?=$pimgUrl?>" 
 									data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" 
 									data-aspectratio="1.0" 
 									data-sizes="auto" 
 									class="lazyload  img-fluid image_zoom_cls-0 main_img" alt="<?=$product['title']?>" >
 								</div>
 								  <?php
-							  }
+							  
 							
                      if(count($product_images)>0){
 								foreach($product_images as $pimg){
@@ -139,22 +75,17 @@
                   <div class="row">
                      <div class="col-12 p-0">
                         <div class="slider-nav ">
-
-							   <?php 
-							   if($product['image']!=""){
-								  ?>
                            <div data-match="<?=$product['title']?>">
-                              <img itemprop="image" src="<?=site_url().'assets/img/product_image/'.$product['image']?>" 
-                                 data-src="<?=site_url().'assets/img/product_image/'.$product['image']?>" 
+                              <img itemprop="image" src="<?=$pimgUrl?>" 
+                                 data-src="<?=$pimgUrl?>" 
                                  data-widths="[157, 270, 303, 370, 377, 670, 570, 720, 900, 1080, 1296, 1512, 1728, 2048]" 
                                  data-aspectratio="1.0" 
                                  data-sizes="auto" 
                                  class="lazyload  img-fluid " alt="<?=$product['title']?>" >
                            </div>
-								<?php 
-								}
-								 if(count($product_images)>0){
-									foreach($product_images as $pimg){
+								<?php
+								   if(count($product_images)>0){
+									  foreach($product_images as $pimg){
 								?>
                            <div data-match="<?=$product['title']?>">
                               <img itemprop="image" src="<?=site_url().'assets/img/gallery_image/'.$pimg['gallery_image']?>" 
@@ -173,15 +104,13 @@
                      </div>
                   </div>
                </div>
-					<?php 
-					  }
-					?>
+					
                <div class="col-lg-6">
                   <div class="product-right">
                      <h2 itemprop="name"  style="font-size: 25px;">
 						   	<?=$product['title']?>
                      </h2>
-                     <h3 id="product_price"><span class=money><?= Currency.$product['price']?></span> </h3>
+                     <h3 id="product_price"><span class=money><?= Currency.round($product['price'],0)?></span> </h3>
                      <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm_id" data-section="product-template">
                         <div class="product-description border-product">
 
@@ -343,16 +272,21 @@
 						   <div class="lable-block">
                         <!-- <span class="lable4 square large center" >sale</span> -->
                      </div>
-                     
+							<?php 
+							  $prImgUrl = site_url().'assets/img/defaultProduct.jpg';
+							  if($pr['image']!=""){
+								 $prImgUrl = site_url().'assets/img/product_image/'.$pr['image'];
+							  } 
+							?>
                      <div class="front">
                         <a href="<?=site_url().'shop_detail/'.$pr['id']?>">
-                        <img style="width:246px;height:295px;" src="<?=site_url().'assets/img/product_image/'.$pr['image']?>" 
+                        <img style="width:246px;height:295px;" src="<?=$prImgUrl?>" 
                            class="lazyload  img-fluid  w-100" alt="<?=$pr['title']?>" >
                         </a>
                      </div>
                      <div class="back">
                         <a href="<?=site_url().'shop_detail/'.$pr['id']?>">
-                        <img style="width:246px;height:295px;" src="<?=site_url().'assets/img/product_image/'.$pr['image']?>" 
+                        <img style="width:246px;height:295px;" src="<?=$prImgUrl?>" 
                            class="lazyload  img-fluid  w-100" alt="<?=$pr['title']?>" >
                         </a>
                      </div>
@@ -369,12 +303,12 @@
                     
                      <div class="title-price">
                         <a href="<?=site_url().'shop_detail/'.$pr['id']?>">
-                           <h6 itemprop="name" class="">
+                           <h6 itemprop="name">
 									<?=$pr['title']?>
                            </h6>
                         </a>
-                        <h4 data-id="4779643961388" data-price="5400" class="">
-                           <span class=money><?=$pr['price']?></span>
+                        <h4 >
+                           <span class=money><?=Currency.round($pr['price'],0)?></span>
                         </h4>
                      </div>
                      <div class="advanced_add_cart select-dropdown">

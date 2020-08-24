@@ -89,7 +89,7 @@
       }
    </style>
 </div>
-<div id="shopify-section-1582109078318" class="shopify-section">
+<div id="shopify-section-1582109078318" class="shopify-section sectionn_us1">
    <section class="banner-padding collection_banner   " style="padding: 70px 0px 0px 0px;">
       <div class="container">
          <div class="row partition2 ">
@@ -290,7 +290,7 @@
       
    </script>
 </div>
-<div id="shopify-section-1581940687435" class="shopify-section">
+<div id="shopify-section-1581940687435" class="shopify-section sectionn_us2">
    <!-- slider tab  -->
    <section class="two-row-prd-slider two-row-prd " style="padding: 70px 0px 0px 0px">
       <div class="container addtocart_count">
@@ -352,13 +352,13 @@
                                        <span class="lable4 square large center" >sale</span>
                                     </div> -->
                                     <div class="front">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$new_product['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$new_product['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$new_product['title']?>" >
                                        </a>
                                     </div>
                                     <div class="back">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$new_product['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$new_product['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$new_product['title']?>" >
                                        </a>
@@ -377,7 +377,7 @@
                                  <div class="product-detail text-center ">
                                     
                                     <div class="title-price">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$new_product['id']?>">
                                           <h6 itemprop="name" class="prd-hover-show">
                                              <?=$new_product['title']?>
                                           </h6>
@@ -411,7 +411,7 @@
                               ?>
                                <div class="product-box product-wrap" >
                                  <div class="product-detail text-center ">
-                                    <p>No new product found.</p>
+                                    <p>No New Product Found</p>
                                  </div>
                                </div>
                               <?php
@@ -435,13 +435,13 @@
                                        <span class="lable4 square large center" >sale</span>
                                     </div> -->
                                     <div class="front">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$special_product['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$special_product['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$special_product['title']?>" >
                                        </a>
                                     </div>
                                     <div class="back">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$special_product['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$special_product['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$special_product['title']?>" >
                                        </a>
@@ -460,7 +460,7 @@
                                  <div class="product-detail text-center ">
                                     
                                     <div class="title-price">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$special_product['id']?>">
                                           <h6 itemprop="name" class="prd-hover-show">
                                              <?=$special_product['title']?>
                                           </h6>
@@ -494,7 +494,7 @@
                               ?>
                                <div class="product-box product-wrap" >
                                  <div class="product-detail text-center ">
-                                    <p>No special product found.</p>
+                                    <p>No Special Product Found</p>
                                  </div>
                                </div>
                               <?php
@@ -516,13 +516,13 @@
                                        <span class="lable4 square large center" >sale</span>
                                     </div> -->
                                     <div class="front">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$new_product['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$new_product['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$new_product['title']?>" >
                                        </a>
                                     </div>
                                     <div class="back">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$new_product['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$new_product['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$new_product['title']?>" >
                                        </a>
@@ -541,7 +541,7 @@
                                  <div class="product-detail text-center ">
                                     
                                     <div class="title-price">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$new_product['id']?>">
                                           <h6 itemprop="name" class="prd-hover-show">
                                              <?=$new_product['title']?>
                                           </h6>
@@ -575,7 +575,7 @@
                               ?>
                                <div class="product-box product-wrap" >
                                  <div class="product-detail text-center ">
-                                    <p>No best selling product found.</p>
+                                    <p>No Best Selling Product Found</p>
                                  </div>
                                </div>
                               <?php
@@ -593,7 +593,7 @@
    <!-- slider tab end -->
 </div>
 
-<div id="shopify-section-1582109078318" class="shopify-section">
+<div id="shopify-section-1582109078318" class="shopify-section sectionn_us3">
 <div class="banner-padding collection_banner   " style="padding: 40px 0px 0px 0px;">
   <div class="container">
     <div class="row partition2 ">
@@ -838,7 +838,7 @@
 
 
 </div>
-<div id="shopify-section-1586781343427" class="shopify-section">
+<div id="shopify-section-1586781343427" class="shopify-section sectionn_us4">
    <script>
       $(document).ready(function () {    
       
@@ -983,7 +983,7 @@
    </script>
 </div>
 
-<div id="shopify-section-1582519539441" class="shopify-section">
+<div id="shopify-section-1582519539441" class="shopify-section sectionn_us5">
    <!-- Product slider start -->
    <section class="two-row-prd-slider special-offer " 
       style="
@@ -1014,13 +1014,13 @@
                                        <span class="lable4 square large center" >sale</span>
                                     </div> -->
                                     <div class="front">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$special_product_all['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$special_product_all['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$special_product_all['title']?>" >
                                        </a>
                                     </div>
                                     <div class="back">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$special_product_all['id']?>">
                                        <img src="<?=site_url();?>/assets/img/product_image/<?=$special_product_all['image']?>" 
                                           class="lazyload  img-fluid " alt="<?=$special_product_all['title']?>" >
                                        </a>
@@ -1039,7 +1039,7 @@
                                  <div class="product-detail text-center ">
                                     
                                     <div class="title-price">
-                                       <a href="#">
+                                       <a href="<?=site_url();?>/shop_detail/<?=$special_product_all['id']?>">
                                           <h6 itemprop="name" class="prd-hover-show">
                                              <?=$special_product_all['title']?>
                                           </h6>
@@ -1073,7 +1073,7 @@
                               ?>
                                <div class="product-box product-wrap" >
                                  <div class="product-detail text-center ">
-                                    <p>No special product found.</p>
+                                    <p>No Special Product Found</p>
                                  </div>
                                </div>
                               <?php
@@ -1091,7 +1091,7 @@
 
 
 
-<!-- <div id="shopify-section-1586924009295" class="shopify-section">
+ <div id="shopify-section-1586924009295" class="shopify-section sectionn_us6">
    <section class="banner-padding collection_banner masonry_main  " style="padding: 50px 0px 50px 0px;">
       <div class="container">
          <div class="row partition2 grid" style="position: relative; height: 1162.08px;">
@@ -1327,10 +1327,10 @@
         });
       });
    </script>
-</div> -->
+</div> 
 
 
-<div id="shopify-section-1585031224319" class="shopify-section"><!-- product slider -->
+<div id="shopify-section-1585031224319" class="shopify-section sectionn_us7"><!-- product slider -->
 
 <section class="col-slider-outer" style="padding: 70px 0px 70px 0px;">
   <div class="container addtocart_count">
@@ -1341,45 +1341,42 @@
       <div class="col-lg-3 col-md-6">
         <div class="theme-card">
           <h5 class="title-border lang_trans" data-trans="#colmn_slider_1585031224319-0_title">
-            Special Products
+            Men Products
           </h5>
           
           
           
           <div class="offer-slider slide-1">
             <?php
-            if(count($special_products_all) > 0)
+
+
+            if(count($men_products) > 0)
             {
-               $divlimit=count($special_products_all)/3;
-               $forvalue= ceil($divlimit);
-               $start=0;
-               $end=3;
-               for ($i=0; $i < $forvalue ; $i++) { 
+               $counter=0; 
+               foreach($men_products as $men_product){
+                  $counter++;
+
+                  if($counter%3==1){
+                     echo ' <div>';
+                  }
 
                   ?>
-                  <div>
-              
-              <?php
-              foreach (array_slice($special_products_all, $start, $end) as $key=> $special_product_all) {
-               
-
-                 ?>
-                 <div class="media">
-                <a href="#" >
+                  <div class="media">
+                <a href="<?=site_url();?>/shop_detail/<?=$men_product['id']?>" >
                   
                   
                     
-                    <img src="<?=site_url();?>/assets/img/product_image/<?=$special_product_all['image']?>" 
+                    <img src="<?=site_url();?>/assets/img/product_image/<?=$men_product['image']?>" 
                           
-                         class="lazyload  img-fluid" alt="<?=$special_product_all['title']?>" >
+                         class="lazyload  img-fluid" alt="<?=$men_product['title']?>" >
                 </a>
                 <div class="media-body align-self-center">
                   
-                  <a href="#" class="p-0">
+                  <a href="<?=site_url();?>/shop_detail/<?=$men_product['id']?>" class="p-0">
                     
                     
                     <h6 itemprop="name" class="lang_trans" data-trans="#4760158797868_pro_title">
-                     <?=$special_product_all['title']?>
+                     <?=$men_product['title']?>
                     </h6>
                     
                     
@@ -1387,28 +1384,28 @@
                   </a>
                   
                   <h4>
-                    <span class=money><?=Currency.$special_product_all['price']?></span>
+                    <span class=money><?=Currency.$men_product['price']?></span>
                   </h4>
                   
                 </div>
               </div>
-
-                 <?php
-              }
-              ?>
-                
-            </div>
                   <?php
+                  if($counter%3==0){
+                     echo ' </div>';
+                  }
 
-              $start= $start + 3;
-              $end= $end + 3;
+
             }
+            if(count($men_products)%3!=0){
+               echo ' </div>';
+            }
+               
 
             }else{
                ?>
                <div>
                    <div class="media">
-                     No special product found.
+                     No Men Product Found
                    </div>
                </div>
                <?php
@@ -1428,45 +1425,43 @@
       <div class="col-lg-3 col-md-6">
         <div class="theme-card">
           <h5 class="title-border lang_trans" data-trans="#colmn_slider_1585031224319-1_title">
-            New Products
+            Women Products
           </h5>
           
           <span class="hide" id="colmn_slider_1585031224319-1_title"></span>
           
           <div class="offer-slider slide-1">
+            
             <?php
-            if(count($new_products_all) > 0)
+
+
+            if(count($women_products) > 0)
             {
-               $divlimit=count($new_products_all)/3;
-               $forvalue= ceil($divlimit);
-               $start=0;
-               $end=3;
-               for ($i=0; $i < $forvalue ; $i++) { 
+               $counter=0; 
+               foreach($women_products as $women_product){
+                  $counter++;
+
+                  if($counter%3==1){
+                     echo ' <div>';
+                  }
 
                   ?>
-                  <div>
-              
-              <?php
-              foreach (array_slice($new_products_all, $start, $end) as $key=> $new_product_all) {
-               
-
-                 ?>
-                 <div class="media">
-                <a href="#" >
+                  <div class="media">
+                <a href="<?=site_url();?>/shop_detail/<?=$women_product['id']?>" >
                   
                   
                     
-                    <img src="<?=site_url();?>/assets/img/product_image/<?=$new_product_all['image']?>" 
+                    <img src="<?=site_url();?>/assets/img/product_image/<?=$women_product['image']?>" 
                           
-                         class="lazyload  img-fluid" alt="<?=$new_product_all['title']?>" >
+                         class="lazyload  img-fluid" alt="<?=$women_product['title']?>" >
                 </a>
                 <div class="media-body align-self-center">
                   
-                  <a href="#" class="p-0">
+                  <a href="<?=site_url();?>/shop_detail/<?=$women_product['id']?>" class="p-0">
                     
                     
                     <h6 itemprop="name" class="lang_trans" data-trans="#4760158797868_pro_title">
-                     <?=$new_product_all['title']?>
+                     <?=$women_product['title']?>
                     </h6>
                     
                     
@@ -1474,34 +1469,33 @@
                   </a>
                   
                   <h4>
-                    <span class=money><?=Currency.$new_product_all['price']?></span>
+                    <span class=money><?=Currency.$women_product['price']?></span>
                   </h4>
                   
                 </div>
               </div>
-
-                 <?php
-              }
-              ?>
-                
-            </div>
                   <?php
+                  if($counter%3==0){
+                     echo ' </div>';
+                  }
 
-              $start= $start + 3;
-              $end= $end + 3;
+
             }
+            if(count($women_products)%3!=0){
+               echo ' </div>';
+            }
+               
 
             }else{
                ?>
                <div>
                    <div class="media">
-                     No new product found.
+                     No Women Product Found
                    </div>
                </div>
                <?php
             }
             ?>
-            
             
             
           </div>
@@ -1513,22 +1507,76 @@
       <div class="col-lg-3 col-md-6">
         <div class="theme-card">
           <h5 class="title-border lang_trans" data-trans="#colmn_slider_1585031224319-2_title">
-            Best Salers
+            Boy kids Products
           </h5>
           
           <span class="hide" id="colmn_slider_1585031224319-2_title"></span>
           
           <div class="offer-slider slide-1">
-            <div>
-                   <div class="media">
-                     No new product found.
-                   </div>
-               </div>
+            <?php
+
+
+            if(count($boy_products) > 0)
+            {
+               $counter=0; 
+               foreach($boy_products as $boy_product){
+                  $counter++;
+
+                  if($counter%3==1){
+                     echo ' <div>';
+                  }
+
+                  ?>
+                  <div class="media">
+                <a href="<?=site_url();?>/shop_detail/<?=$boy_product['id']?>" >
+                  
+                  
+                    
+                    <img src="<?=site_url();?>/assets/img/product_image/<?=$boy_product['image']?>" 
+                          
+                         class="lazyload  img-fluid" alt="<?=$boy_product['title']?>" >
+                </a>
+                <div class="media-body align-self-center">
+                  
+                  <a href="<?=site_url();?>/shop_detail/<?=$boy_product['id']?>" class="p-0">
+                    
+                    
+                    <h6 itemprop="name" class="lang_trans" data-trans="#4760158797868_pro_title">
+                     <?=$boy_product['title']?>
+                    </h6>
+                    
+                    
+                    
+                  </a>
+                  
+                  <h4>
+                    <span class=money><?=Currency.$boy_product['price']?></span>
+                  </h4>
+                  
+                </div>
+              </div>
+                  <?php
+                  if($counter%3==0){
+                     echo ' </div>';
+                  }
+
+
+            }
+            if(count($boy_products)%3!=0){
+               echo ' </div>';
+            }
+               
+
+            }else{
+               ?>
                <div>
                    <div class="media">
-                     No new product found.
+                     No Boy kids Product Found
                    </div>
                </div>
+               <?php
+            }
+            ?>
             
           </div>
         </div>
@@ -1539,22 +1587,76 @@
       <div class="col-lg-3 col-md-6">
         <div class="theme-card">
           <h5 class="title-border lang_trans" data-trans="#colmn_slider_1587216730335_title">
-            Top Products
+            Girl Kids Products
           </h5>
           
           <span class="hide" id="colmn_slider_1587216730335_title"></span>
           
           <div class="offer-slider slide-1">
-            <div>
-                   <div class="media">
-                     No new product found.
-                   </div>
-               </div>
+            <?php
+
+
+            if(count($girl_products) > 0)
+            {
+               $counter=0; 
+               foreach($girl_products as $girl_product){
+                  $counter++;
+
+                  if($counter%3==1){
+                     echo ' <div>';
+                  }
+
+                  ?>
+                  <div class="media">
+                <a href="<?=site_url();?>/shop_detail/<?=$girl_product['id']?>" >
+                  
+                  
+                    
+                    <img src="<?=site_url();?>/assets/img/product_image/<?=$girl_product['image']?>" 
+                          
+                         class="lazyload  img-fluid" alt="<?=$girl_product['title']?>" >
+                </a>
+                <div class="media-body align-self-center">
+                  
+                  <a href="<?=site_url();?>/shop_detail/<?=$girl_product['id']?>" class="p-0">
+                    
+                    
+                    <h6 itemprop="name" class="lang_trans" data-trans="#4760158797868_pro_title">
+                     <?=$girl_product['title']?>
+                    </h6>
+                    
+                    
+                    
+                  </a>
+                  
+                  <h4>
+                    <span class=money><?=Currency.$girl_product['price']?></span>
+                  </h4>
+                  
+                </div>
+              </div>
+                  <?php
+                  if($counter%3==0){
+                     echo ' </div>';
+                  }
+
+
+            }
+            if(count($girl_products)%3!=0){
+               echo ' </div>';
+            }
+               
+
+            }else{
+               ?>
                <div>
                    <div class="media">
-                     No new product found.
+                     No Girls kids Product Found
                    </div>
                </div>
+               <?php
+            }
+            ?>
             
           </div>
         </div>
@@ -1567,7 +1669,7 @@
 <!-- product slider end -->
 
 
-<div id="shopify-section-1584958835087" class="shopify-section">
+<div id="shopify-section-1584958835087" class="shopify-section sectionn_us8">
    <!-- service layout -->
    <div class="container service-top-space " 
       style="padding: 70px 15px 0px 15px;">
@@ -1640,7 +1742,7 @@
 </div>
 
 
-<div id="shopify-section-1581942173709" class="shopify-section">
+<div id="shopify-section-1581942173709" class="shopify-section sectionn_us9">
    <!-- blog section -->
    <section class="blog section-b-space 
       " style="
@@ -1672,7 +1774,7 @@
                                  class="lazyload  img-fluid  w-100" alt="<?=$blog['title']?>" >
                               <div class="ovrly"></div>
                               <div class="buttons search">
-                                 <a href="#" class="fa fa-search search-botton"></a>
+                                 <a href="<?=site_url();?>/blog_detail/<?=$blog['id']?>" class="fa fa-search search-botton"></a>
                               </div>
                               <div class="inner-option">
                                  <h4><time datetime="2020-03-24T13:03:00Z"><?=date("d", strtotime($blog['cdate'])); ?></time></h4>
@@ -1681,13 +1783,19 @@
                            </figure>
                         </div>
                         <div class="blog-details">
-                           <a href="#">
+                           <a href="<?=site_url();?>/blog_detail/<?=$blog['id']?>">
                               <p >
                                  <?=$blog['title']?>
                               </p>
                            </a>
                            <h6>
-                              By: admin
+
+                             Posted By: 
+                             <?php
+
+                             $admin= $this->common_model->GetSingleData('admin',array('id'=>$blog['added_by']));
+                             echo $admin['fname'].' '.$admin['lname'];
+                             ?>
                               
                            </h6>
                         </div>
@@ -1701,7 +1809,7 @@
                      <div class="col-md-12" >
                      <div class="outer-blog">
                         
-                        No Blog found.
+                        No Blog Found
                      </div>
                     </div>
                      <?php

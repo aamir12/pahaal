@@ -209,7 +209,7 @@
                            <div class="icon-nav">
                               <ul class="header-dropdown">
                                  <li class="mobile-wishlist">
-                                    <a href="#">
+                                    <a href="<?=base_url();?>wishlist">
                                        <div>
                                           <img src="<?=site_url();?>/assets/img/heart.png" alt="wishlist">
                                           <i class="fa fa-heart" aria-hidden="true"></i>
@@ -223,28 +223,27 @@
                                     </div>
                                     <ul class="show-div my-account">
                                        <li>
-                                          <a href="#" >
+                                          <a href="<?=base_url();?>login" >
                                           Log in
                                           </a>
                                        </li>
                                        <li>
-                                          <a href="#" >
-                                          register
+                                          <a href="<?=base_url();?>register" >
+                                          Register
                                           </a>
                                        </li>
                                     </ul>
                                  </li>
-                                 <li class="onhover-div mobile-cart">
-                                    <div>
-                                       <img src="<?=site_url();?>/assets/img/cart.png" class="img-fluid fixed_cart" alt="" >
-                                       <i class="ti-bag fixed_cart"></i>
-                                       <span class="cart_qty_cls">
-                                       0
-                                       </span>
-                                    </div>
-                                    <!--  <ul class="show-div shopping-cart" id="cart_container_id">
-                                       </ul> -->
+
+                                 <li class="mobile-cart">
+                                    <a href="<?=base_url();?>cart">
+                                       <div>
+                                          <img src="<?=site_url();?>/assets/img/cart.png" alt="cart">
+                                          <i class="ti-bag fixed_cart" aria-hidden="true"></i>
+                                       </div>
+                                    </a>
                                  </li>
+                                 
                               </ul>
                            </div>
                         </div>
@@ -275,7 +274,7 @@
                                 }
                                 if($default_content['about_page']!='on'){
                                     ?>
-                                    <li><a href="<?=base_url();?>">
+                                    <li><a href="<?=base_url();?>about-us">
                                       <span >
                                       About Us
                                       </span>
@@ -308,7 +307,7 @@
                                 }
                                 if($default_content['contact_page']!='on'){
                                     ?>
-                                    <li><a href="<?=base_url();?>">
+                                    <li><a href="<?=base_url();?>contact-us">
                                       <span >
                                       Contact Us
                                       </span>
