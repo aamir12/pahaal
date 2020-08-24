@@ -86,5 +86,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 
 define("EMAIL_ID",'info@vrncon.com');
 define("Project",'Vrncon');
-define("Currency",'$'); //keep constant name also capital
+define("Currency",'₹'); //keep constant name also capital
 define("COLOR_OPTIONID",2);
+define("BLOG_PAGE_LIMIT",10);
+define("PRODUCT_PAGE_LIMIT",12);

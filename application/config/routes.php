@@ -112,11 +112,25 @@ $route['registration'] = 'home/registration';
 
 /*Site*/
 $route['blog'] = 'Site/Blog';
+$route['blog/(:num)'] = 'Site/Blog/index/$1';
 $route['blog_detail/(:num)'] = 'Site/Blog/Blog_detail/$1';
 
 $route['shop'] = 'Site/Product';
 $route['shop_detail/(:num)'] = 'Site/Product/Shop_detail/$1';
 
+
+$route['about-us'] = 'Site/Other_pages';
+$route['contact-us'] = 'Site/Other_pages/Contactus';
+$route['terms-and-condition'] = 'Site/Other_pages/Termscondition';
+$route['privacy-policy'] = 'Site/Other_pages/Privacypolicy';
+$route['login'] = 'Site/Login';
+$route['register'] = 'Site/Register';
+$route['wishlist'] = 'Site/Wishlist';
+$route['cart'] = 'Site/Cart';
+$route['checkout'] = 'Site/Checkout';
+$route['forget'] = 'Site/Forget';
+
+$route['profile'] = 'Site/Dashboard';
 /*Site*/
 
 

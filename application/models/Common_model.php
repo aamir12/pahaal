@@ -76,6 +76,24 @@ class Common_model extends CI_Model {
     } else {
       return array();
     }
+	}
+	function GetAllDataStartEndLimit($table,$where=null,$ob=null,$obc='desc',$limit=null,$offset=null){
+    if($where) {
+      $this->db->where($where);
+    }
+    if($ob) {
+      $this->db->order_by($ob,$obc);
+    }
+    if($limit) {
+      $this->db->limit($limit,$offset);
+    }
+    
+    $query = $this->db->get($table);
+    if($query->num_rows()) {  
+      return $query->result_array();
+    } else {
+      return array();
+    }
   }
      // print_r($this->db->last_query($query));
 

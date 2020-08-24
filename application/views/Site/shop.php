@@ -157,7 +157,7 @@
                                        <div class="custom-control custom-checkbox collection-filter-checkbox">
                                           <input type="radio" 
 														  <?= ($priceStr=="0-500")?"checked='checked'":'';?> onchange="filter()" name="price" class="custom-control-input" id="price0500" value="0-500">
-                                          <label class="custom-control-label" for="price0500">$0-$500</label>
+                                          <label class="custom-control-label" for="price0500"><?=Currency?>0-<?=Currency?>500</label>
                                        </div>
                                     </li>
                                     <li >
@@ -165,21 +165,21 @@
                                           <input type="radio"
 														<?= ($priceStr=="500-1000")?"checked='checked'":'';?>
 														onchange="filter()" name="price" class="custom-control-input" id="price5001000" value="500-1000">
-                                          <label class="custom-control-label" for="price5001000">$500-$1000</label>
+                                          <label class="custom-control-label" for="price5001000"><?=Currency?>500-<?=Currency?>1000</label>
                                        </div>
                                     </li>
                                     <li >
                                        <div class="custom-control custom-checkbox collection-filter-checkbox">
                                           <input type="radio"
 														<?= ($priceStr=="1000-3000")?"checked='checked'":'';?>  onchange="filter()" name="price" class="custom-control-input" id="price10003000" value="1000-3000">
-                                          <label class="custom-control-label" for="price10003000">$1000-$3000</label>
+                                          <label class="custom-control-label" for="price10003000"><?=Currency?>1000-<?=Currency?>3000</label>
                                        </div>
                                     </li>
                                     <li  >
                                        <div class="custom-control custom-checkbox collection-filter-checkbox">
                                           <input type="radio"
 														<?= ($priceStr=="3000-5000")?"checked='checked'":'';?> onchange="filter()" name="price" class="custom-control-input" id="price30005000" value="3000-5000">
-                                          <label class="custom-control-label" for="price30005000">$3000-$5000</label>
+                                          <label class="custom-control-label" for="price30005000"><?=Currency?>3000-<?=Currency?>5000</label>
                                        </div>
                                     </li>
                                  </ul>

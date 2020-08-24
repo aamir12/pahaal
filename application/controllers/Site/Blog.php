@@ -11,47 +11,44 @@ class Blog extends CI_Controller
 		parent::__construct();
 	}
 
-	public function index(){
+	public function index($offset = null){
 
 		$blogs= $this->common_model->GetAllData('blog',null,'id','desc');
 		$this->load->library('pagination');
 		$config = [
 		'base_url'=>base_url('blog'),
-		'per_page' =>2,
+		'per_page' =>BLOG_PAGE_LIMIT,
 		'total_rows' => count($blogs),
-		"full_tag_open" => "<center><ul class='pagination'>",
-		"full_tag_close" => "</ul></center>",
-		"first_tag_open" => "<li>",
+		"full_tag_open" => "<ul class='pagination'>",
+		"full_tag_close" => "</ul>",
+		"first_tag_open" => "<li class='page-item'>",
 		"first_tag_close" => "</li>",
-		"last_tag_open" => "<li>",
+		"last_tag_open" => "<li class='page-item'>",
 		"last_tag_close" => "</li>",
-		"next_tag_open" => "<li> ",
+		"next_tag_open" => "<li class='page-item'> ",
 		"next_tag_close" => "</li>",
-		"prev_tag_open" => "<li>",
+		"prev_tag_open" => "<li class='page-item'>",
 		"prev_tag_close" => "</li>",
-		"num_tag_open" => "<li>",
+		"num_tag_open" => "<li class='page-item'>",
 		"num_tag_close" => "</li>",
-		"cur_tag_open" => "<li class='active'><a>",
+		"cur_tag_open" => "<li class='page-item active'><a class='page-link'>",
 		"cur_tag_close" => "</a></li>",
 		"use_page_numbers" => TRUE
-
 		];
-
+		$config['next_link'] = '<span aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>';
+		$config['prev_link'] = '<span aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>';
+		$config['attributes'] = array('class' => 'page-link paginate_btn_cls');
 
 		$this->pagination->initialize($config);
 
 		$limit = $config['per_page'];
-		$offset = $this->uri->segment(3);
-		$offset = ($offset=='' || filter_var($offset, FILTER_VALIDATE_INT) === false)?1:$offset;
+		
+		$offset = ($offset== null || filter_var($offset, FILTER_VALIDATE_INT) === false)?1:$offset;
 		$cur_page = $offset;
 		$offset -= 1;
 		$per_page = $limit;
 		$start = $offset * $per_page;
-//$data['students'] = $this->Student_mdl->getAllstudent($limit,$start);
-
-
-		
-		$data['blogs'] = $this->common_model->GetAllData('blog',null,'id','desc');
+		$data['blogs'] = $this->common_model->GetAllDataStartEndLimit('blog',null,'id','desc',$limit,$start);
 
 		$data['blogs_limited']= $this->common_model->GetAllDataLimit('blog',NULL,'id','desc','3');
 		

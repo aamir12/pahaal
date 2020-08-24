@@ -43,7 +43,7 @@ class Product extends CI_Controller
 
 	public function getFilterProduct(){
 		$params = $this->input->get();
-		$limit = 12;
+		$limit = PRODUCT_PAGE_LIMIT;
 		$page = isset($params['page'])?$params['page']:'1';
 		$params['pagination']['start'] = $page;
 		$params['pagination']['limit'] = $limit;
@@ -96,7 +96,7 @@ class Product extends CI_Controller
 						   </h6>
 						</a>
 						<h4  data-price="'.$p['prodPrice'].'" class="">
-						   <span class="money">$'.$p['prodPrice'].'</span>
+						   <span class="money">'.Currency.$p['prodPrice'].'</span>
 						</h4>
 					 </div>
 					 <div class="advanced_add_cart select-dropdown">

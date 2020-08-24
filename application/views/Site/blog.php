@@ -220,33 +220,20 @@
         
        
                 
-<?= $this->pagination->create_links() ?>
+
         <div class="pagination-class">
-        <ul class="pagination">
-  
-
-          
-          
+				<?= $this->pagination->create_links() ?>
+        <!-- <ul class="pagination">
           <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-          
-          
-          
           <li class="page-item"><a class="page-link paginate_btn_cls" href="/blogs/news?page=2">2</a></li>
-          
-          
-          
           <li class="page-item"><a class="page-link paginate_btn_cls" href="/blogs/news?page=3">3</a></li>
-          
-            
-
-          
           <li class="page-item">
             <a class="page-link paginate_btn_cls" href="/blogs/news?page=2" aria-label="Next">
               <span aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
             </a>
           </li>
           
-        </ul>
+        </ul> -->
 
 
 
