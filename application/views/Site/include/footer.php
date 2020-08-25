@@ -266,6 +266,8 @@
 <!-- <script src="<?=site_url();?>/assets/site/js/theme.min.js" ></script>     -->
 <script src="<?=site_url();?>/assets/site/js/imagesloaded.pkgd.min.js" ></script>    
 <script src="<?=site_url();?>/assets/site/js/masonry.pkgd.min.js" ></script>    
+<script src="<?=site_url();?>/assets/site/js/cart.js" ></script> 
+<script src="<?=site_url();?>/assets/js/bootstrap-notify.min.js"></script>
 
 <!-- Some styles to get you started. -->
 <style>

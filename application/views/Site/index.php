@@ -396,9 +396,7 @@
                                     <div class="advanced_add_cart select-dropdown">
                                        
                                           <div class="qty-add-box d-flex">
-                                             
-                                             
-                                             <input type="submit" value="add" class="btn add_to_cart_btn_cls btn-solid" />
+                                             <input type="button"  onclick="addToCart('<?=$new_product['id']?>','<?=$new_product['povid']?>')" value="add" class="btn add_to_cart_btn_cls btn-solid" />
                                           </div>
                                        
                                     </div>
@@ -481,7 +479,7 @@
                                           <div class="qty-add-box d-flex">
                                              
                                              
-                                             <input type="submit" value="add" class="btn add_to_cart_btn_cls btn-solid" />
+                                             <input type="button" onclick="addToCart('<?=$special_product['id']?>','<?=$special_product['povid']?>')"  value="add" class="btn add_to_cart_btn_cls btn-solid" />
                                           </div>
                                        
                                     </div>
@@ -562,7 +560,7 @@
                                           <div class="qty-add-box d-flex">
                                              
                                              
-                                             <input type="submit" value="add" class="btn add_to_cart_btn_cls btn-solid" />
+                                             <input type="button" onclick="addToCart('<?=$new_product['id']?>','<?=$new_product['povid']?>')" value="add" class="btn add_to_cart_btn_cls btn-solid" />
                                           </div>
                                        
                                     </div>
@@ -755,7 +753,7 @@
 
 
 .collection_banner .grid {
-/*     display: -webkit-flex;
+ /*     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
@@ -1055,14 +1053,12 @@
                                           
                                        </h4>
                                     </div>
+												
                                     <div class="advanced_add_cart select-dropdown">
-                                       
                                           <div class="qty-add-box d-flex">
-                                             
-                                             
-                                             <input type="submit" value="add" class="btn add_to_cart_btn_cls btn-solid" />
+                                             <input type="button" 
+															 onclick="addToCart('<?=$special_product_all['id']?>','<?=$special_product_all['povid']?>')" value="add" class="btn add_to_cart_btn_cls btn-solid" />
                                           </div>
-                                       
                                     </div>
                                  </div>
                                  

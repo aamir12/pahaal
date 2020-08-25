@@ -27727,6 +27727,12 @@ footer .download-app {
     left: 20px;
     top: 20px;
 }
+
+.itemOptions{
+	line-height: 14px;
+    color: #424242;
+}
+
 /*media*/
 @media(min-width: 578px){
     .addd_ii2.main-menu {

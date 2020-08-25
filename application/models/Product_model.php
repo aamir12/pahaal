@@ -161,9 +161,9 @@ class Product_model extends CI_Model {
 	public function getRelatedProduct($pid,$category=0,$subcategory=0,$limit=10){
 		if($category!=0){
 			$sql = "select *,round(price, 0) as price from products where category = '".$category."' and id <> '".$pid."' ";
-			if($subcategory !=0){
-				$sql .=" and subcategory= '".$subcategory."'";
-			}
+			// if($subcategory !=0){
+			// 	$sql .=" and subcategory= '".$subcategory."'";
+			// }
 			$sql.=" order by price asc limit ".$limit;
 			$query = $this->db->query($sql);
 			if($query->num_rows()>0){
@@ -191,6 +191,7 @@ class Product_model extends CI_Model {
 		  $this->db->limit($limit);
 		}
 		
+		$this->db->group_by('p.id'); 
 		$query = $this->db->get();
 		if($query->num_rows()) {  
 		  return $query->result_array();
